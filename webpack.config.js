@@ -17,7 +17,7 @@ module.exports = {
     extensions: ["", ".js", ".jsx"],
   },
 
-  model: {
+  module: {
     rules: [
       {
         test: /\.js$/,
@@ -45,6 +45,14 @@ module.exports = {
       "process.env": {
         NODE_ENV: JSON.stringify("development"),
       },
-    }), 
+    }),
   ],
+
+  // devServer: {
+  //   contentBase: path.resolve(__dirname, 'public/'),
+  //   port: 3000,
+  //   publicPath: 'http://localhost:3000/dist/',
+  //   hotOnly: true
+  // }
+
 };
